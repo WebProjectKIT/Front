@@ -1,0 +1,63 @@
+
+.grid-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .grid-col {
+    width: 33.3%;
+    min-width: 200px;
+    box-sizing: border-box;
+    padding-inline : 10px;
+    margin-bottom: 20px;
+    float: left;
+  }
+  
+  .grid-col img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .body-content {
+    background:  hsl(65, 80%, 60%);;
+    padding: 0 30px 30px 40px;
+    position: relative;
+    border: 1px solid ;
+    border-top: none;
+    z-index: 1;
+    line-height: 23px;
+    color: #000;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .body-content:before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: -1px;
+    width: 100%;
+    height: 50px;
+    background:  hsl(65, 80%, 60%);
+    border-left: 1px solid  hsl(65, 80%, 60%);
+    border-right: 1px solid  hsl(65, 80%, 60%);
+    transform: skewY(5deg);
+    z-index: -1;
+    box-shadow: 0 -4px 5px rgba(0,0,0,0.4);
+  }
+  
+  .body-content h3 {
+    margin-bottom: 15px;
+    font-family: 'GmarketSansLight';
+    font-weight: 900;
+    font-size: 20px;
+  }
+  
+  .body-content p{
+    font-family: 'GmarketSansLight';
+    font-size:15px;
+  }
+  

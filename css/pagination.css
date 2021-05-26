@@ -1,0 +1,19 @@
+#pagination{
+    position: relative;
+    text-align: center;
+}
+
+.page{
+    padding-inline:20px;
+    padding-block:15px;
+}
+
+.page:hover{
+    color : hsl(65, 80%, 60%);
+}
+
+.active{
+    background-color: hsl(65, 80%, 60%);
+    color : black;
+    border-radius: 100%;
+}
