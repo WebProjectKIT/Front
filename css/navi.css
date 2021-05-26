@@ -1,0 +1,37 @@
+
+#navi{
+    position: fixed;
+    width:100%;
+    z-index: 100;  background-color: hsl(5, 15%, 5%);
+  }
+  
+  #navi>h2{
+    display:inline;
+    padding:10px;
+    font-size:smaller;
+  }
+  
+  #navi>ul{
+    position:absolute;
+    right:0;
+    display: inline;
+  }
+  
+  .naviItem{
+    display:inline;
+    padding-inline:20px;
+    padding-block: 5px;
+    font-size: smaller;
+  }
+  
+  .naviItem > a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .naviItem > a:hover,
+  .naviItem > a:focus {
+    text-decoration: none;
+    color: hsl(65, 80%, 60%);
+  }
+  
