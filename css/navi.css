@@ -1,37 +1,94 @@
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color 0.5s;
+    margin:0;
+    padding:0;
+}
 
-#navi{
-    position: fixed;
-    width:100%;
-    z-index: 100;  background-color: hsl(5, 15%, 5%);
-  }
-  
-  #navi>h2{
-    display:inline;
-    padding:10px;
-    font-size:smaller;
-  }
-  
-  #navi>ul{
-    position:absolute;
-    right:0;
-    display: inline;
-  }
-  
-  .naviItem{
-    display:inline;
-    padding-inline:20px;
-    padding-block: 5px;
-    font-size: smaller;
-  }
-  
-  .naviItem > a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .naviItem > a:hover,
-  .naviItem > a:focus {
-    text-decoration: none;
-    color: hsl(65, 80%, 60%);
-  }
-  
+.closebtn, #main>span{
+  display: none;
+}
+
+#mySidenav{
+  position: fixed;
+  background-color: white;
+  width:100%;
+  margin:0;
+  padding:0;
+  text-align: right;
+}
+
+#main{
+  padding-top:5%;
+  padding-inline: 2%;
+}
+
+.navItem{
+  font-size:110%;
+  display:inline-block;
+  color:black;
+  text-decoration: none;
+  padding-block:2%;
+  padding-inline:3%;
+}
+
+.navItem:hover{
+  font-weight: bolder;
+  border-bottom:black solid 2px;
+  background-color: hsl(65, 87%, 76%);
+}
+
+@media (max-height: 768px){
+    #main > span,
+    #mySidenav {
+        display: block;
+    }
+
+    #mySidenav{
+      text-align: left;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    #main {
+        transition: margin-left 0.5s;
+        padding: 16px;
+    }
+
+    #main > span {
+        font-size: 30px;
+        cursor: pointer;
+    }
+}

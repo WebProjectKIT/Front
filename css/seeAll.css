@@ -47,6 +47,15 @@ body {
   margin-top : 10px;
   font-weight: bold;
 }
+ 
+.grid-col {
+  width: 33.3%;
+  min-width: 300px;
+  box-sizing: border-box;
+  padding-inline : 10px;
+  margin-bottom: 20px;
+  float: left;
+}
 
 .section {
   transform-origin: center top;
