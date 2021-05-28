@@ -40,8 +40,8 @@ header > img {
     width:100%;
 }
 
-#seeAllsection{
-    margin-top: 10%;;
+section{
+    margin-bottom: 10%;
 }
 
 .seeMore {
@@ -70,4 +70,10 @@ header > img {
     justify-content: center;
     width: 100%;
     height: auto;
+}
+
+@media screen and (max-width: 768px), (max-height:1024){
+    section{
+        margin-bottom: 30%;
+    }
 }
