@@ -18,7 +18,7 @@ body {
   text-align: right;
 }
 
-#main{
+#main>h2{
   padding-top:5%;
   padding-inline: 2%;
 }
@@ -35,7 +35,7 @@ body {
 .navItem:hover{
   font-weight: bolder;
   border-bottom:black solid 2px;
-  background-color: hsl(65, 87%, 76%);
+  font-size:130%;
 }
 
 @media (max-height: 768px){
@@ -84,11 +84,11 @@ body {
 
     #main {
         transition: margin-left 0.5s;
-        padding: 16px;
     }
 
     #main > span {
         font-size: 30px;
         cursor: pointer;
+        padding-left:16px;
     }
 }
