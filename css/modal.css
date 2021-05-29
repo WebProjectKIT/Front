@@ -1,0 +1,18 @@
+#my_modal {
+    display: none;
+    width: 300px;
+    padding: 20px 60px;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    border-radius: 3px;
+    font-size: 120%;
+    line-height: 180%;
+}
+
+#my_modal .closeBtn {
+    cursor: pointer;
+    position: absolute;
+    font-weight: bolder;
+    top: 10px;
+    right: 10px;
+}

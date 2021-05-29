@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/cardview.css">
         <link rel="stylesheet" href="./css/pagination.css">
+        <link rel="stylesheet" href="./css/modal.css">
     </head>
     <body>
         <div id="mySidenav" class="sidenav">
@@ -16,15 +17,13 @@
             <a href="https://github.com/WebProjectKIT" class="navItem" id="git">
                 <img src="asset/git-squared.png"></a>
         </div>
-
         <div id="main">
             <span onclick="openNav()">&#9776;
             </span>
             <header>
-
                 <img src="asset/typewriter-801921_1920.jpg">
             </header>
-
+    
             <article>
                 <section>
                     <h2>My Portfolio</h2>
@@ -82,7 +81,14 @@
                             <div class="from">made BY HJ</div>
                         </div>
                     </div>
-                    <p class="addMine">내 포트폴리오 추가하기</p>
+                    <p class="addMine" id="openBtn">내 포트폴리오 추가하기</p>
+                    <div id="my_modal">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita dolore
+                        eveniet laborum repellat sit distinctio, ipsa rem dicta alias velit? Repellat
+                        doloribus mollitia dolorem voluptatum ex reiciendis aut in incidunt?
+                        <a class="closeBtn">X</a>
+                    </div>
+
                 </section>
                 <div class="pagination">
                     <span><img src="./asset/arrow-down-sign-to-navigate.png" class="arrow" id="leftArr"></span>
@@ -105,5 +111,6 @@
         </div>
 
         <script src="./script/main.js"></script>
+        <script src="./script/modal.js"></script>
     </body>
 </html>
