@@ -3,6 +3,8 @@
     flex-wrap: wrap;
     margin:0 auto;
     padding:0%;
+    width:100%;
+    height:auto;
     text-align:center;
     justify-content: center;
     align-content: center;
@@ -10,11 +12,10 @@
 
 .card{
     width:30%;
-    height: 400px;
+    height: 420px;
     border:solid rgb(214, 214, 214) 1px;
     max-width: 400px;
     min-width:100px;
-    max-height: 400px;
     margin:1%;
     overflow: hidden;
 }
@@ -27,7 +28,7 @@
 .card>h1{
     font-weight: bolder;
     font-size:150%;
-    padding-left: 2%
+    margin-block:15px;
 }
 
 .card>p{
