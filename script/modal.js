@@ -40,5 +40,5 @@ Element.prototype.setStyle = function(styles) {
 };
 
 document.getElementById('openBtn').addEventListener('click', function() {
-    modal('my_modal');
+    modal('modal');
 });

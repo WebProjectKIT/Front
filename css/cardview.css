@@ -12,12 +12,23 @@
 
 .card{
     width:30%;
-    height: 420px;
+    height: 550px;
     border:solid rgb(214, 214, 214) 1px;
     max-width: 400px;
     min-width:100px;
     margin:1%;
     overflow: hidden;
+}
+
+.card>.star{
+    cursor: pointer;
+    width:25px;
+    height: 25px;
+    position:absolute;
+    margin:5px;
+    background-color: white;
+    padding:2px;
+    border-radius: 30px;
 }
 
 .card>img{
@@ -33,10 +44,18 @@
 
 .card>p{
     font-size: 120%;
+    max-width:100%;
     padding-inline:2%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.card>p:hover{
+    max-width:100%;
+    overflow: visible;
+    text-overflow: unset;
+    white-space: wrap;
 }
 
 .from{
