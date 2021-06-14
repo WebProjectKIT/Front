@@ -34,3 +34,7 @@ function getEle() {
     newDiv.append(newWho);
     cardBody.appendChild(newDiv);
 }
+
+function cancel() {
+    
+}
