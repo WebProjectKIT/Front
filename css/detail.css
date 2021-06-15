@@ -21,8 +21,8 @@
     min-height: 100px;
 }
 
-button{
-    display: inline-block;
+.submitBtn{
+      display: inline;
       float:right;
       letter-spacing: 0.15rem;
       font-weight: bolder;
@@ -33,7 +33,7 @@ button{
       border-radius: 30px;
       color:white;
   }
-  button:hover{
+  .submitBtn:hover{
       cursor: pointer;
       background-color: rgb(75, 75, 75);
   }
@@ -47,6 +47,28 @@ button{
     border-bottom: 1px solid rgb(95, 95, 95);
   
   }
+
+  .back{
+    text-align: center;
+  }
+  .back_btn
+  {
+    margin : auto;
+    letter-spacing: 0.15rem;
+    font-weight: bolder;
+    font-size: 100%;
+    text-align: center;
+    background-color: black;
+    padding:10px;
+    border-radius: 30px;
+    color:white;
+  }
+  .back_btn:hover{
+    cursor: pointer;
+    background-color: rgb(75, 75, 75);
+}
+
+.container:after { content:""; clear:both; display:block; }
 
   #comment-add{
       width:90%;
@@ -64,5 +86,7 @@ button{
     #comment-add{
         width:80%;
     }
+
+    
 }
 

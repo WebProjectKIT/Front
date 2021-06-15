@@ -43,8 +43,10 @@
                             comments (<span id = "comment-count">1</span>)
                         </div>
                         <div class = "comment-row">
+                            <div>
                             <textarea id = "comment-add" name = "comment-add" row = 4></textarea>
-                            <button onclick="submitComment()" type="submit" class="submitBtn">작성</button>     
+                            <button onclick="submitComment()" type="submit" class="submitBtn">작성</button>  
+                            </div>   
                             <div class = "comment-row">
                                 <div class = "comment-date">2020-06-15 17:10</div>
                                 <div class="comment-content">ddddddddddddddddddddddddddddddddddddddddddddddddddddddㅁㄴㄻㄴㄹㅇㅇㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴ</div>
@@ -59,9 +61,11 @@
                             </div>
                         </div>
                     </div>
-                    <button onclick="goBack()">이전 페이지</button>
+                   
                 </section>
-               
+                <div class = "back">
+                <button class ="back_btn" onclick="goBack()">이전 페이지</button>
+            </div>
             </article>
 
             <footer>WebProjectKIT</footer>
