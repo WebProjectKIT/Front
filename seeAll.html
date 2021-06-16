@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/cardview.css">
         <link rel="stylesheet" href="./css/pagination.css">
+        <link rel="stylesheet" href="./css/modal.css">
     </head>
     <body>
         <div id="mySidenav" class="sidenav">
@@ -45,6 +46,28 @@
                         </div>
                     </div>
                 </section>
+                
+                <p class="addMine" id="openBtn">글쓰기</p>
+                <div id="modal">
+                    <form method="POST">
+                    <h1>포트폴리오 추가</h1>
+                    <div>
+                        <label for="title">제목</label>
+                        <input type="text" id="title" name="title"></div>
+                    <div class="form-group">
+                        <label for="content">내용</label>
+                        <textarea class="form-control" rows="10" id="content" name="content"></textarea>
+                    </div>
+                    <div>
+                        <label for="link">링크</label>
+                        <input type="text" id="link" name="link"></div>
+                    <div>
+                        <label for="about">설명</label>
+                        <input type="text" id="about" name="about"></div>
+                    <button onclick=getEle()>추가하기</button>
+                    </form>
+                    <a class="closeBtn"><img src="./asset/cancel.png"></a>
+                </div>
                 <div class="pagination">
                     <span><img src="./asset/arrow-down-sign-to-navigate.png" class="arrow" id="leftArr"></span>
                     <span>1</span>
@@ -67,5 +90,6 @@
 
         <script src="./script/main.js"></script>
         <script src="./script/add.js"></script>
+        <script src="./script/modal.js"></script>
     </body>
 </html>
